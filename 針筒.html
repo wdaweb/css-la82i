@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 400px;
+      height: 100px;
+      border: 1px solid #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(90deg, transparent 0%, transparent 95%, black 50%);
+      background-repeat: repeat-x;
+      background-size: 20px 20px;
+    }
+
+    .box::after {
+      content: "";
+      width: 400px;
+      height: 100px;
+      background-image: linear-gradient(transparent 5%, white, lightgray, white);
+      position: absolute;
+    }
+
+
+    .word {
+      color: gray;
+      position: absolute;
+      top: 82px;
+      left: 0px;
+      z-index: 1;
+    }
+
+
+    .line {
+      width: 50px;
+      height: 100px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .box2 {
+      width: 50px;
+      height: 60px;
+      border: 1px solid #000;
+      position: absolute;
+      top: 25px;
+      left: 400px;
+      border-radius: 0 15% 15% 0;
+      background-image: linear-gradient(transparent 7%, white, lightgray, white);
+
+    }
+
+    .box3 {
+      width: 80px;
+      border: 1px solid #000;
+      position: absolute;
+      top: 55px;
+      left: 451px;
+
+    }
+
+    .box4 {
+      width: 50px;
+      height: 60px;
+      border: 1px solid #000;
+      position: absolute;
+      top: 20px;
+      left: -52px;
+      background-image: linear-gradient(transparent 7%, white, white, lightgray, white);
+
+    }
+
+    .box5 {
+      width: 40px;
+      height: 100px;
+      border: 1px solid #000;
+      border-radius: 20%;
+      position: absolute;
+      top: 0;
+      left: -90px;
+      background-image: linear-gradient(white 30%, lightgray, white);
+
+    }
+
+    .line2 {
+      width: 175px;
+      height: 100px;
+      background-color: rgb(250 250 210/50%);
+      position: absolute;
+      left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="line">
+    <div class="line2"></div>
+  </div>
+
+  <div class="box">
+    <div class="word">Made in Taiwan</div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
